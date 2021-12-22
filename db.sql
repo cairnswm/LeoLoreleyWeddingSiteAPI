@@ -32,12 +32,16 @@ CREATE TABLE IF NOT EXISTS `loreley_guests` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `code` varchar(50) NOT NULL DEFAULT '0',
   `name` varchar(100) NOT NULL DEFAULT '0',
-  `attending` varchar(10) NOT NULL,
+  `partner` varchar(1) NOT NULL DEFAULT 'N',
+  `attending` varchar(10) DEFAULT 'Null',
+  `guestnames` varchar(50) NOT NULL,
+  `attendingnames` varchar(50) DEFAULT NULL,
+  `partnername` varchar(50) DEFAULT NULL,
   `maxguests` int(11) NOT NULL DEFAULT 0,
-  `phone` varchar(50) DEFAULT '0',
-  `phone2` varchar(50) DEFAULT '0',
+  `phone` varchar(50) DEFAULT NULL,
+  `phone2` varchar(50) DEFAULT NULL,
   `email` varchar(150) NOT NULL DEFAULT '0',
-  `email2` varchar(150) DEFAULT '0',
+  `email2` varchar(150) DEFAULT NULL,
   `coming` int(11) DEFAULT 0,
   `comingkids` int(11) DEFAULT 0,
   `song` varchar(100) DEFAULT NULL,
@@ -45,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `loreley_guests` (
   `dietry` varchar(300) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `code` (`code`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
 
 -- Data exporting was unselected.
 

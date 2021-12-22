@@ -23,8 +23,8 @@ $config = Array(
 	"guestcode" => Array(
 		"tablename" => "loreley_guests",
 					"key" => "code",
-					"select" => Array("id","code","name","attending","maxguests","coming","comingkids","email","song", "special", "dietry"),
-					"update" => Array("attending","coming","comingkids", "song", "special", "dietry")
+					"select" => Array("id","code","name","attending","maxguests","coming","comingkids","email","song", "special", "dietry", "guestnames","attendingnames","partner","partnername"),
+					"update" => Array("attending","coming","comingkids", "song", "special", "dietry","attendingnames","partnername")
 	)
 	/*,
     "friendrating" => Array(
